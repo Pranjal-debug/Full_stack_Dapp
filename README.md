@@ -154,11 +154,11 @@ Test coverage includes:
 
 ### Frontend
 
-* Vercel / Netlify
+* ReactJS / Tailwind css
 
 ### Backend
 
-* Render / Railway / AWS Lambda
+* Rust
 
 ### Smart Contracts
 
