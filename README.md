@@ -205,8 +205,8 @@ This project is licensed under the MIT License.
 
 For questions or collaboration:
 
-* Email: [your-email@example.com](mailto:your-email@example.com)
-* GitHub: https://github.com/your-username
+* Email: pranjalgupta2903@gmail.com
+* GitHub: https://github.com/Pranjal-debug
 
 ---
 
