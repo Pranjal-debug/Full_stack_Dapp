@@ -168,10 +168,10 @@ Test coverage includes:
 
 ### Uploads
 
-* Contract id: CB7W4JB5KTVT5PM4VWC4JVXUR5CFOTYCW4QMON62GLZ24BSUXK2PS5YE
+* Contract address: CB7W4JB5KTVT5PM4VWC4JVXUR5CFOTYCW4QMON62GLZ24BSUXK2PS5YE
 * UI ss:
   <img src='https://github.com/Pranjal-debug/Full_stack_Dapp/blob/main/Screenshot%202026-03-20%20152315.png?raw=true' />
-*Contract ss:
+* Contract ss:
 <img src='https://github.com/Pranjal-debug/Full_stack_Dapp/blob/main/Screenshot%202026-03-20%20144243.png?raw=true' />
 
 ## 🔮 Future Improvements
