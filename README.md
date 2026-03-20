@@ -1,31 +1,213 @@
-🚀 StellarScribe: Decentralized BlogStellarScribe is a high-performance, decentralized blogging platform built on the Stellar Network using Soroban Smart Contracts. It allows users to own their content, tip authors in XLM, and ensure censorship-resistant publishing.🛠 Tech StackSmart Contracts: Rust & Soroban SDKFrontend: Next.js 15+, Tailwind CSS, Shadcn/UIStellar Integration: @stellar/stellar-sdk, freighter-apiStorage: On-chain (Metadata) + IPFS/Arweave (Content Body)Development: Stellar CLI, Cargo✨ FeaturesDecentralized Publishing: Posts are cryptographically signed and stored with references on the Stellar ledger.Micropayments: Integrated tipping system using XLM or custom Soroban tokens.Wallet Auth: Passwordless login via Freighter Wallet or Passkeys.Content Governance: DAO-ready structure for community-led moderation.🚀 Quick Start1. PrerequisitesRust & CargoStellar CLIFreighter Wallet (Set to Testnet/Futurenet)Node.js (v20+)2. Environment SetupBash# Clone the repository
-git clone https://github.com/Pranjal-debug/Full_stack_Dapp.git
+# 🌐 Decentralized Blog DApp (Stellar)
 
-# Install frontend dependencies
+A full-stack decentralized blogging platform built on the **Stellar blockchain**, enabling users to create, publish, and interact with blog content in a censorship-resistant and trustless environment.
+
+---
+
+## 🚀 Overview
+
+This project is a **Decentralized Application (DApp)** that allows users to:
+
+* 📝 Create and publish blog posts on-chain or via decentralized storage
+* 👤 Own their identity through Stellar wallets
+* 💬 Interact with posts (like, comment, tip)
+* 🔐 Maintain control over their content without centralized authorities
+
+The app leverages the **Stellar network** for fast, low-cost transactions and integrates with modern web technologies for a seamless user experience.
+
+---
+
+## 🏗️ Architecture
+
+### 1. Frontend
+
+* Framework: React / Next.js
+* Styling: TailwindCSS / CSS Modules
+* Wallet Integration: Stellar Wallets (Freighter, Albedo)
+* Features:
+
+  * User authentication via wallet
+  * Blog feed & post viewer
+  * Create/edit post UI
+  * Like/comment/tip functionality
+
+### 2. Backend (Optional Hybrid Layer)
+
+* Node.js / Express (or serverless functions)
+* Handles:
+
+  * Indexing blockchain data
+  * Metadata caching
+  * Off-chain interactions (if needed)
+
+### 3. Blockchain Layer (Stellar)
+
+* Smart logic via:
+
+  * Stellar Soroban (smart contracts)
+  * Stellar transactions & operations
+* Stores:
+
+  * Post hashes / references
+  * User interactions (likes, tips)
+
+### 4. Storage
+
+* IPFS / Arweave for decentralized content storage
+* Stores:
+
+  * Blog content (text, images)
+  * Metadata JSON
+
+---
+
+## 🔧 Tech Stack
+
+| Layer      | Technology        |
+| ---------- | ----------------- |
+| Frontend   | React / Next.js   |
+| Backend    | Node.js / Express |
+| Blockchain | Stellar (Soroban) |
+| Storage    | IPFS / Arweave    |
+| Wallets    | Freighter, Albedo |
+
+---
+
+## ⚙️ Installation
+
+### Prerequisites
+
+* Node.js (v18+)
+* Yarn / npm
+* Stellar wallet (Freighter recommended)
+
+### Clone Repository
+
+```bash
+git clone https://github.com/your-username/stellar-blog-dapp.git
+cd stellar-blog-dapp
+```
+
+### Install Dependencies
+
+```bash
 npm install
-3. Deploy Smart ContractsThe blog logic is written in Rust. You'll need to deploy it to the Stellar Testnet.Bash# Navigate to contracts
-cd contracts
+```
 
-# Build the WASM contract
-stellar contract build
+### Run Development Server
 
-# Deploy to testnet (replace <identity> with your Stellar CLI identity)
-stellar contract deploy \
-    --wasm target/wasm32-unknown-unknown/release/blog_contract.wasm \
-    --source <identity> \
-    --network testnet
-Note: Copy the Contract ID generated above and paste it into your .env.local file.4. Run FrontendBash# Return to root and start the dev server
+```bash
 npm run dev
-Open http://localhost:3000 to view the DApp.📂 Project StructurePlaintext├── contracts/             # Soroban Smart Contracts (Rust)
-│   ├── src/lib.rs         # Main Blog logic (Post, Update, Delete)
-│   └── Cargo.toml         # Rust dependencies
-├── src/                   # Next.js Frontend
-│   ├── components/        # UI Components (Editor, PostCard)
-│   ├── hooks/             # Custom Stellar/Wallet hooks
-│   └── lib/               # Stellar SDK & Soroban client helpers
-├── public/                # Static assets
-└── .env.example           # Environment variables template
-📜 Smart Contract APIThe blog_contract handles the following core functions:FunctionDescriptioncreate_post(author, cid)Stores a new post's IPFS CID linked to an author.get_post(post_id)Retrieves post metadata and storage reference.tip_author(post_id, amount)Transfers XLM from reader to author via Soroban.update_profile(name, bio)Manages decentralized identity on-chain.🤝 ContributingFork the ProjectCreate your Feature Branch (git checkout -b feature/AmazingFeature)Commit your Changes (git commit -m 'Add some AmazingFeature')Push to the Branch (git push origin feature/AmazingFeature)Open a Pull Request
+```
 
-⚖️ License
-Distributed under the MIT License. See LICENSE for more information.
+---
+
+## 🔑 Environment Variables
+
+Create a `.env` file in the root:
+
+```env
+NEXT_PUBLIC_STELLAR_NETWORK=testnet
+NEXT_PUBLIC_HORIZON_URL=https://horizon-testnet.stellar.org
+NEXT_PUBLIC_IPFS_GATEWAY=https://ipfs.io/ipfs/
+```
+
+---
+
+## ✨ Features
+
+* 🔐 Wallet-based authentication (no passwords)
+* ✍️ Create & publish decentralized blog posts
+* 📡 Immutable content storage
+* 💸 Tip creators using Stellar Lumens (XLM)
+* ❤️ Like & comment via blockchain transactions
+* 🌍 Fully decentralized & censorship-resistant
+
+---
+
+## 📦 Smart Contract (Soroban)
+
+Example contract responsibilities:
+
+* Register blog posts
+* Store IPFS hashes
+* Track likes/tips
+* Associate posts with wallet addresses
+
+---
+
+## 🧪 Testing
+
+```bash
+npm run test
+```
+
+Test coverage includes:
+
+* Smart contract logic
+* API endpoints
+* UI components
+
+---
+
+## 🚀 Deployment
+
+### Frontend
+
+* Vercel / Netlify
+
+### Backend
+
+* Render / Railway / AWS Lambda
+
+### Smart Contracts
+
+* Deploy on Stellar Testnet / Mainnet using Soroban CLI
+
+---
+
+## 🔮 Future Improvements
+
+* 🧠 Decentralized identity (DID integration)
+* 🪙 Tokenized incentives for writers
+* 📊 On-chain reputation system
+* 🔍 Advanced search & indexing
+* 📱 Mobile app support
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repo
+2. Create a new branch
+3. Commit your changes
+4. Open a pull request
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 🙌 Acknowledgements
+
+* Stellar Development Foundation
+* Open-source contributors
+* IPFS & Web3 ecosystem
+
+---
+
+## 📬 Contact
+
+For questions or collaboration:
+
+* Email: [your-email@example.com](mailto:your-email@example.com)
+* GitHub: https://github.com/your-username
+
+---
+
+> ⚡ Build freely. Write fearlessly. Own your content.
