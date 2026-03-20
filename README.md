@@ -1,6 +1,5 @@
 🚀 StellarScribe: Decentralized BlogStellarScribe is a high-performance, decentralized blogging platform built on the Stellar Network using Soroban Smart Contracts. It allows users to own their content, tip authors in XLM, and ensure censorship-resistant publishing.🛠 Tech StackSmart Contracts: Rust & Soroban SDKFrontend: Next.js 15+, Tailwind CSS, Shadcn/UIStellar Integration: @stellar/stellar-sdk, freighter-apiStorage: On-chain (Metadata) + IPFS/Arweave (Content Body)Development: Stellar CLI, Cargo✨ FeaturesDecentralized Publishing: Posts are cryptographically signed and stored with references on the Stellar ledger.Micropayments: Integrated tipping system using XLM or custom Soroban tokens.Wallet Auth: Passwordless login via Freighter Wallet or Passkeys.Content Governance: DAO-ready structure for community-led moderation.🚀 Quick Start1. PrerequisitesRust & CargoStellar CLIFreighter Wallet (Set to Testnet/Futurenet)Node.js (v20+)2. Environment SetupBash# Clone the repository
-git clone https://github.com/your-username/stellar-scribe.git
-cd stellar-scribe
+git clone https://github.com/Pranjal-debug/Full_stack_Dapp.git
 
 # Install frontend dependencies
 npm install
