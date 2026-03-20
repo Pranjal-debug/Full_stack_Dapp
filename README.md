@@ -166,6 +166,10 @@ Test coverage includes:
 
 ---
 
+### Screenshot
+
+* <img src='https://github.com/Pranjal-debug/Full_stack_Dapp/blob/main/Screenshot%202026-03-20%20144243.png?raw=true' />
+
 ## 🔮 Future Improvements
 
 * 🧠 Decentralized identity (DID integration)
