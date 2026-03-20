@@ -84,8 +84,8 @@ The app leverages the **Stellar network** for fast, low-cost transactions and in
 ### Clone Repository
 
 ```bash
-git clone https://github.com/your-username/stellar-blog-dapp.git
-cd stellar-blog-dapp
+git clone https://github.com/Pranjal-debug/Full_stack_Dapp.git
+cd Full_stack_Dapp.git
 ```
 
 ### Install Dependencies
