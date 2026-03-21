@@ -170,7 +170,7 @@ Test coverage includes:
 
 * Contract address/id: <code style="color: cyan">CB7W4JB5KTVT5PM4VWC4JVXUR5CFOTYCW4QMON62GLZ24BSUXK2PS5YE </code>
 * UI ss:
-  <img width="1024" height="577" alt="[1774115632840249986636508579161" src="https://lh3.googleusercontent.com/gg-dl/AOI_d__szm45ESdpCFM3AwUVu-51bJLVTgDIihK30AktzZAms921enSCfocsPYm-w99yZ1J9dGysN65GYW87MZXpcwHxX_-2EzPFVsDEZyiAfiMrYKWwMFgN4fWQ9rnsIcSb9SqCfGy4VuM4ckgqzx1BNQDNZaQf0VMW-R55IkaMfrIS5f5_=s1600-rj?authuser=1" />
+  <img src="https://lh3.googleusercontent.com/gg-dl/AOI_d__szm45ESdpCFM3AwUVu-51bJLVTgDIihK30AktzZAms921enSCfocsPYm-w99yZ1J9dGysN65GYW87MZXpcwHxX_-2EzPFVsDEZyiAfiMrYKWwMFgN4fWQ9rnsIcSb9SqCfGy4VuM4ckgqzx1BNQDNZaQf0VMW-R55IkaMfrIS5f5_=s1600-rj?authuser=1" />
 * Contract ss:
 <img src='https://github.com/Pranjal-debug/Full_stack_Dapp/blob/main/Screenshot%202026-03-20%20144243.png?raw=true' />
 
